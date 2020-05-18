@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- Primeiro o jquery depois o popper depois o bootstrap.min.js nesta ordem para o funcionamento ideal. -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>BrainStorm</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logotipo.jpg" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                BrainStorm
+            </a>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#saiba">Saiba mais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trabalhos">Trabalhos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Quem somos nós</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown08">
+                            <a class="dropdown-item" href="#contatos">Contatos</a>
+                            <a class="dropdown-item" href="#trabalheaqui">Trabalhe conosco</a>
+                            <a class="dropdown-item" href="#enderecos">Endereço</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="inicio">
+            <!-- Carrosel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./imgs/foto1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./imgs/foto2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./imgs/foto3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Voltar</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+            </div>
+            <!-- Quebra de Linha -->
+            <br>
+            <!-- Cabeçalho de Feedbacks -->
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">Quem contrata conhece e recomenda.
+                </p>
+                <footer class="blockquote-footer"> Feedbacks de alguns clientes nossos <cite
+                        title="Source Title">BrainStorm</cite>
+                </footer>
+            </blockquote>
+            <!-- Linha com fotos dos usuários e seus Feedbacks -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="rounded-circle ml-5 mb-2" src="./imgs/ceo1_google_fabio_coelho.jpg"
+                        alt="Generic placeholder image" width="140" height="140">
+                    <h2>Google</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                        ultricies
+                        vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent
+                        commodo
+                        cursus
+                        magna.</p>
+
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle ml-5 mb-2" src="./imgs/ceo_facebook.jpg" alt="Generic placeholder image"
+                        width="140" height="140">
+                    <h2>Facebook</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Cras
+                        mattis
+                        consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum
+                        nibh.</p>
+
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle ml-5 mb-2" src="./imgs/ceo_microsoft_satya_nadella.jpg"
+                        alt="Generic placeholder image" width="140" height="140">
+                    <h2>Microsoft</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                        ligula
+                        porta
+                        felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                        ut
+                        fermentum
+                        massa justo sit amet risus.</p>
+
+
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div>
+        <div id="saiba"></div>
+        <div id="trabalhos"></div>
+        <div id="quemsomos">
+            <div id="contatos"></div>
+            <div id="trabalheaqui"></div>
+            <div id="enderecos"></div>
+        </div>
+    </div>
+</body>
+
+</html>
